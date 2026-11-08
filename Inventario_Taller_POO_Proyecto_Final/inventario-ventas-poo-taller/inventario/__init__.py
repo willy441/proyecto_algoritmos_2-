@@ -1,1 +1,0 @@
-"""Paquete del sistema de inventario y ventas del taller."""

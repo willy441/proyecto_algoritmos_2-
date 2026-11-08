@@ -1,0 +1,15 @@
+digraph casos {
+ graph [rankdir=LR, fontname="Arial", label="Sistema de Inventario — Taller Automotriz", labelloc=t, fontsize=20, bgcolor="white"];
+ node [fontname="Arial", fontsize=11]; edge [fontname="Arial",fontsize=10];
+ vendedor [shape=plaintext,label="Administrador / Vendedor"];
+ subgraph cluster_sistema {
+ label="Sistema de Inventario — Taller Automotriz"; style=rounded;
+ agregar [label="Agregar repuesto",shape=ellipse]; buscar [label="Buscar repuesto",shape=ellipse];
+ vender [label="Registrar venta",shape=ellipse]; validar [label="Validar stock",shape=ellipse];
+ alerta [label="Mostrar alerta de stock mínimo",shape=ellipse]; consultar [label="Consultar inventario",shape=ellipse];
+ reporte [label="Reporte de ventas",shape=ellipse]; eliminar [label="Eliminar repuesto",shape=ellipse]; salir [label="Guardar y salir",shape=ellipse];
+ }
+ vendedor -> agregar [arrowhead=none]; vendedor -> buscar [arrowhead=none]; vendedor -> vender [arrowhead=none];
+ vendedor -> consultar [arrowhead=none]; vendedor -> reporte [arrowhead=none]; vendedor -> eliminar [arrowhead=none]; vendedor -> salir [arrowhead=none];
+ vender -> validar [label="<<include>>",style=dashed]; alerta -> vender [label="<<extend>>\n[stock <= 3]",style=dashed];
+}

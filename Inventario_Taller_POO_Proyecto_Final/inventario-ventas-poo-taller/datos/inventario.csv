@@ -1,0 +1,12 @@
+codigo,nombre,categoria,precio,stock
+REP001,Filtro De Aceite Sintetico,Filtros,65.00,12
+REP002,Filtro De Aire Motor,Filtros,85.00,8
+REP003,Pastillas De Freno Delanteras,Frenos,250.00,5
+REP004,Liquido De Frenos Dot4,Frenos,45.00,2
+REP005,Bujias De Iridio (Pack 4),Encendido,320.00,6
+REP006,Aceite 10W-30 Galon,Lubricantes,185.00,10
+REP007,Aceite 20W-50 Galon,Lubricantes,160.00,3
+REP008,Amortiguadores Delanteros,Suspension,750.00,4
+REP009,Bateria 12V 13 Placas,Electrico,650.00,2
+REP010,Faja De Tiempo Gates,Motor,140.00,7
+REP011,Filtro De Aire,Filtros,85.00,3
